@@ -7,14 +7,12 @@ class Devise::SessionsController < DeviseController
 
   def index
     @users = User.order("created_at asc")
-    
-    end
+
   end
 
   def show
     @user = User.find(params[:id])
 
-    
   end  
   
   def new
